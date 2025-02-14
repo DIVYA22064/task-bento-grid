@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "DMSans";
+  src: url("../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DMSans", sans-serif;
+  line-height: 1;
+  padding: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero,
+.card {
+  padding: 1rem;
+  border-radius: 0.7rem;
+  text-align: center;
+}
+
+.hero {
+  background: #7651dc;
+  color: #f9f9f9;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #fec96c;
+}
+
+.hero img {
+  width: 60%;
+}
+
+.hero p {
+  font-size: 0.9rem;
+}
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.manage {
+  background: white;
+}
+
+.manage p {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0.8rem auto;
+}
+
+.schedule {
+  background: #ffcc69;
+  padding-bottom: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.schedule p {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.schedule .image {
+  margin-top: 2rem;
+  width: 70%;
+  position: relative;
+  height: 6.25rem;
+  margin-left: 0;
+}
+
+.schedule .image img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+}
+
+.optimize {
+  background: #dcd1fc;
+}
+
+.optimize h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.optimize p {
+  font-size: 0.9rem;
+  margin: 0.8rem;
+  line-height: 1.2;
+}
+
+.grow {
+  background: #7651dc;
+  text-align: center;
+}
+
+.grow .image img {
+  display: block;
+  margin: 1rem auto;
+  width: 70%;
+  height: auto;
+}
+
+.grow p {
+  font-size: 1.9rem;
+  color: #f9f9f9;
+  margin: 1rem auto;
+}
+.audience {
+  background: white;
+}
+
+.audience_text {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.audience p {
+  font-size: 1.15rem;
+  text-align: left;
+  margin: 1rem auto;
+}
+
+.audience .image {
+  width: 60%;
+}
+.create {
+  background: #faeee2;
+}
+
+.create h2 {
+  font-size: 1.55rem;
+  text-align: left;
+  margin: 1rem auto;
+}
+
+.create em {
+  color: #7656c5;
+}
+
+.create .image {
+  width: 75%;
+}
+
+.ai-content {
+  background: #ffcc69;
+}
+
+.ai-content h2 {
+  font-size: 1.6rem;
+  text-align: left;
+  margin: 1rem auto;
+}
+
+.ai-content .image {
+  width: 75%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+    max-width: 48rem;
+    max-height: 37rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  .create {
+    grid-row: 1 /3;
+    grid-column: 1/4;
+    padding: 1.5rem;
+  }
+
+  .create .image {
+    width: 100%;
+  }
+  .hero {
+    grid-row: 1;
+    grid-column: 4/ 10;
+    padding: 1rem;
+  }
+
+  .hero img {
+    width: 45%;
+  }
+
+  .optimize {
+    grid-row: 1/4;
+    grid-column: 10/13;
+  }
+  .optimize h2,
+  .optimize p {
+    text-align: left;
+    padding: 2rem auto;
+    margin-left: auto;
+  }
+
+  .ai-content {
+    grid-row: 3/7;
+    grid-column: 1/4;
+  }
+  .ai-content h2 {
+    margin-top: 0;
+  }
+  .ai-content .image {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .manage {
+    grid-column: 4/7;
+    grid-row: 2 / 4;
+  }
+
+  .schedule {
+    grid-column: 7/10;
+    grid-row: 2 / 4;
+  }
+  .schedule p {
+    font-size: 1rem;
+  }
+  .schedule .image {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .audience {
+    grid-column: 4/7;
+    grid-row: 4/7;
+  }
+  .grow {
+    grid-column: 7 / 13;
+    grid-row: 4/7;
+    display: flex;
+  }
+}
